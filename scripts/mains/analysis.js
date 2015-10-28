@@ -38,7 +38,7 @@ require([
     mapCreatorConfig.baseUrl = '../../submodules/fenix-ui-map-creator/src/js';
 
     var metadataViewerConfig = MetadataViewer;
-    metadataViewerConfig.baseUrl = '../../submodules/fenix-ui-metadata-viewer/src/js';
+    metadataViewerConfig.baseUrl = '../../submodules/fenix-ui-metadata-viewer/src/js/';
 
    /* var faostatCommonsConfig = faostatCommons;
     faostatCommonsConfig.baseUrl = '../../submodules/faostat-ui-commons/js';
@@ -75,7 +75,7 @@ require([
 
 
                 // METADATA VIEWER
-                'fx-mdviewer/config/config': '../../config/submodules/fx-md-viewer/config'
+               /* 'fx-mdviewer/config/config': '../../config/submodules/fx-md-viewer/config'*/
 
 
             },
