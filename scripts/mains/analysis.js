@@ -75,7 +75,8 @@ require([
 
 
                 // METADATA VIEWER
-               /* 'fx-mdviewer/config/config': '../../config/submodules/fx-md-viewer/config'*/
+                'fx-mdviewer/config/': '../../config/submodules/fx-md-viewer/',
+                'fx-mdviewer/config/config': '../../config/submodules/fx-md-viewer/config'
 
 
             },
