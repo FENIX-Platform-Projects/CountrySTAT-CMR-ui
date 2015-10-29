@@ -5,23 +5,27 @@ define([
     'fx-menu/start',
     'fx-ana/start',
     'fx-cat-br/start',
+    'FENIX_UI_METADATA_VIEWER',
+    'fx-report',
     'host/config',
     'amplify'
-], function ($, _, Menu, Analysis, Catalog, C) {
+], function ($, _, Menu, Analysis, Catalog,MetadataViewer,Report, C) {
 
     'use strict';
 
     var s = {
         ANALYSIS_CONTAINER: '#fx-analysis-container',
-
         CATALOG_CONTAINER: '#fx-catalog-container',
-
         MODULES_STACK_CONTAINER: '#fx-modules-stack-container',
-
         OVERLAY: "#overlay",
         OVERLAY_CONTENT: '.overlay-content',
         OVERLAY_OPEN: '.open-overlay',
-        OVERLAY_CLOSE: '.close-overlay'
+        OVERLAY_CLOSE: '.close-overlay',
+        PAGE_CONTENT: "#analysis-page-content",
+        MODAL_METADATA: '#cstat-metadata-modal',
+        MODAL_METADATAVIEWER_CONTAINER: '[data-content="metadata-viewer-container"]',
+
+        BTN_EXPORT_METADATA : '.fx-md-report-btn'
     };
 
     function Host() {
@@ -43,7 +47,11 @@ define([
 
     Host.prototype.initFenixComponent = function () {
 
-         this.topmenu = new Menu({
+        this.$modalMetadata = $(s.MODAL_METADATA);
+
+        this.$report = new Report();
+
+        this.topmenu = new Menu({
              url: C.TOP_MENU,
              active: "analysis",
              container: '#sidebar-wrapper',
@@ -65,7 +73,7 @@ define([
             }
         }).init();
 
-       this.catalog = new Catalog({
+        this.catalog = new Catalog({
 
             container: document.querySelector(s.CATALOG_CONTAINER),
 
@@ -73,17 +81,29 @@ define([
                 BLANK_FILTER: C.CATALOG_BLANK_FILTER
             },
 
-            results: {
-                actions: {
-                    SELECT_RESOURCE: {
-                        event: 'select',
-                        labels: {
-                            EN: 'Select Resource'
-                        }
+           results: {
+               actions: {
+                   SELECT_RESOURCE: {
+                       event: 'select',
+                       labels: {
+                           EN: 'View'
+                       }
+                   },
+                   METADATA: {
+                       event: 'metadata',
+                       labels: {
+                           EN: 'Metadata'
+                       }
+                   },
+                   DOWNLOAD: {
+                       event: 'download',
+                       labels: {
+                           EN: 'Download'
+                       }
+                   }
 
-                    }
-                }
-            }
+               }
+           }
 
         }).init();
     };
@@ -106,8 +126,79 @@ define([
         });
 
         amplify.subscribe('fx.widget.catalog.select', _.bind(this.closeOverly, this));
+
+        amplify.subscribe('fx.widget.catalog.metadata', _.bind(this.onMetadataClick, this));
+
+        amplify.subscribe('fx.widget.catalog.download',_.bind(this.onDownloadClick, this));
     };
 
+
+    Host.prototype.onMetadataClick = function(model) {
+
+        var self = this;
+
+        this.$modalMetadata.modal('show');
+
+        var metadata = new MetadataViewer();
+
+        self.$modalMetadata.find(s.MODAL_METADATAVIEWER_CONTAINER).empty();
+
+        metadata.init({
+            lang: 'en',
+            data: model,
+            //domain: "rlm_" + request.inputs.indicator[0],
+            placeholder: self.$modalMetadata.find(s.MODAL_METADATAVIEWER_CONTAINER)
+        });
+
+        self._listenToExportMetadata(model);
+
+    };
+
+    Host.prototype._listenToExportMetadata = function(model) {
+        var fileName = model.title['EN'].replace(/[^a-z0-9]/gi, '_').toLowerCase();
+
+        var self = this;
+        $(s.BTN_EXPORT_METADATA).on('click', function() {
+
+            var payload = {
+                input: {
+                    config: {
+                        uid: model.uid
+                    }
+                },
+                output: {
+                    config: {
+                        lang: 'en'.toUpperCase(),
+                        fileName: fileName + '.pdf'
+                    }
+                }
+            };
+
+            self.$report.init('metadataExport');
+            self.$report.exportData(payload, C.MD_EXPORT_URL);
+        });
+    };
+
+
+    Host.prototype.onDownloadClick = function (model) {
+
+        var payload = {
+            input:{
+                config:{
+                    uid: model.uid,
+                    environment_url : C.DATA_ENVIROMENT_URL
+                }
+            },
+            output: {
+                config:{
+                    lang : 'en'.toUpperCase()
+                }
+            }
+        };
+
+        this.$report.init('tableExport');
+        this.$report.exportData(payload,C.MD_EXPORT_URL);
+    };
 
     Host.prototype.toggleOverly = function () {
 
