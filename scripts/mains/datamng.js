@@ -53,6 +53,9 @@ require([
                     chaplin: "{FENIX_CDN}/js/chaplin/1.0.1/chaplin.min",
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
+                    'bootstrap-datetimepicker': "{FENIX_CDN}/js/bootstrap-datetimepicker/3.1.3/bootstrap-datetimepicker",
+
+
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
 
                     'fx-d-m/config/config': '../../config/submodules/datamng/config',
