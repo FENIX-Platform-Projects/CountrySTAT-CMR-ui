@@ -7265,6 +7265,10 @@ input[type="checkbox"]:checked + label {
   position: absolute;
   right: 0;
   z-index: 1; }
+#overlay .fx-catalog-modular-menu-container {
+  margin-top: 35px; }
+#overlay .fx-catalog-modular-form-holder {
+  margin-top: 35px; }
 
 /* Afg Data Management */
 #main-container .container {
