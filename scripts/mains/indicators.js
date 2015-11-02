@@ -2,15 +2,21 @@
 // relative or absolute path of Components' main.js
 require([
     '../../submodules/fenix-ui-common/js/Compiler',
-    '../../submodules/fenix-ui-menu/js/paths'
-], function (Compiler, Menu) {
+    '../../submodules/fenix-ui-menu/js/paths',
+    '../../submodules/fenix-ui-common/js/paths'
+
+], function (Compiler, Menu, Common) {
 
     'use strict';
 
     var menuConfig = Menu;
     menuConfig.baseUrl = '../../submodules/fenix-ui-menu/js';
 
-    Compiler.resolve([menuConfig],
+    var commonConfig = Common;
+    commonConfig.baseUrl = '../../submodules/fenix-ui-common/js';
+
+
+    Compiler.resolve([menuConfig, commonConfig],
         {
             placeholders: { "FENIX_CDN": "//fenixrepo.fao.org/cdn" },
             config: {
@@ -20,6 +26,7 @@ require([
                 // Specify the paths of vendor libraries
                 paths: {
                     host: '../indicators/host',
+                    templates : '../indicators/templates',
                     underscore: "{FENIX_CDN}/js/underscore/1.7.0/underscore.min",
                     handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
