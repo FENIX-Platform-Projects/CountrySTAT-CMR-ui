@@ -1,0 +1,30 @@
+[
+  {
+    "val": "GAUL0|2014",
+    "text": {
+      "EN": "GAUL 0"
+    },
+    "subject": "geo"
+  },
+  {
+    "val": "CPC|2.1",
+    "text": {
+      "EN": "CPC 2.1Test"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_Indicators",
+    "text": {
+      "EN": "CountrySTAT Indicators"
+    },
+    "subject": "item"
+  },
+  {
+    "val": "CountrySTAT_UM",
+    "text": {
+      "EN": "CountrySTAT UM"
+    },
+    "subject": "um"
+  }
+]

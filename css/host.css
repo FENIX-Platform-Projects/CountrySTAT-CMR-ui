@@ -5394,7 +5394,7 @@ input[type="button"]::-moz-focus-inner {
   top: 0;
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -90px 0;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -90px 0;
   background-size: 150px 30px; }
 
 .fx-catalog-mod-timerseries {
@@ -5730,7 +5730,7 @@ legend {
   top: 7px;
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -15px 0;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -15px 0;
   background-size: 150px 30px;
   cursor: pointer; }
 
@@ -5740,7 +5740,7 @@ legend {
   right: 7px;
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -45px 0;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -45px 0;
   background-size: 150px 30px;
   cursor: pointer; }
 
@@ -5750,7 +5750,7 @@ legend {
   right: 28px;
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -30px 0;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -30px 0;
   background-size: 150px 30px;
   cursor: pointer; }
 
@@ -5888,44 +5888,44 @@ div[data-module="sector"] .fx-catalog-modular-form-content {
 .fx-panel-plus {
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -90px 0;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -90px 0;
   background-size: 150px 30px; }
 
 .fx-panel-minus {
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -90px -15px;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -90px -15px;
   background-size: 150px 30px; }
 
 .fx-panel-info {
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat 0 0;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat 0 0;
   background-size: 150px 30px;
   float: right; }
 
 .fx-panel-required {
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -15px -15px;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -15px -15px;
   background-size: 150px 30px; }
 
 .fx-panel-ok {
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -45px -15px;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -45px -15px;
   background-size: 150px 30px; }
 
 .fx-panel-remove {
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -60px -15px;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -60px -15px;
   background-size: 150px 30px; }
 
 .fx-panel-refresh {
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -75px -15px;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -75px -15px;
   background-size: 150px 30px; }
 
 .metadata-container .btn {
@@ -6164,7 +6164,7 @@ input[type="checkbox"]:checked + label {
   display: inline-block;
   height: 15px;
   width: 15px;
-  background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -45px 0;
+  background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -45px 0;
   background-size: 150px 30px;
   cursor: pointer;
   position: relative;
@@ -6641,7 +6641,7 @@ input[type="checkbox"]:checked + label {
     position: absolute;
     height: 15px;
     width: 15px;
-    background: url("../submodules/fenix-ui-common/css/css/img/fenix-catalog-sprite-small.svg") no-repeat -15px 0;
+    background: url("../submodules/fenix-ui-common/css/img/fenix-catalog-sprite-small.svg") no-repeat -15px 0;
     background-size: 150px 30px;
     top: 3px;
     left: 12px; }
@@ -7218,7 +7218,7 @@ input[type="checkbox"]:checked + label {
 
 .jstree-default .jstree-node,
 .jstree-default .jstree-icon {
-  background-image: url("../submodules/fenix-ui-common/css//css/img/treejs-32px.png"); }
+  background-image: url("../submodules/fenix-ui-common//css/img/treejs-32px.png"); }
 
 .jstree-default .jstree-wholerow-clicked {
   background: none;
