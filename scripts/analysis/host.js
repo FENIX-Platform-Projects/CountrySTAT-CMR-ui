@@ -8,8 +8,9 @@ define([
     'FENIX_UI_METADATA_VIEWER',
     'fx-report',
     'host/config',
+    'fx-common/AuthManager',
     'amplify'
-], function ($, _, Menu, Analysis, Catalog,MetadataViewer,Report, C) {
+], function ($, _, TopMenu, Analysis, Catalog,MetadataViewer,Report, C, AuthManager) {
 
     'use strict';
 
@@ -47,16 +48,39 @@ define([
 
     Host.prototype.initFenixComponent = function () {
 
+        var self  =this;
+
         this.$modalMetadata = $(s.MODAL_METADATA);
 
         this.$report = new Report();
 
-        this.topmenu = new Menu({
-             url: C.TOP_MENU,
-             active: "analysis",
-             container: '#sidebar-wrapper',
-             template: 'fx-menu/templates/side.html'
-         });
+        var menuConf  = {
+            url: C.TOP_MENU,
+            active: "analysis",
+            container: '#sidebar-wrapper',
+            template: 'fx-menu/templates/side.html'
+        };
+
+        var menuConfAuth = _.extend({}, menuConf, {
+            hiddens: ['login']
+        }), menuConfPub = _.extend({}, menuConf, {
+            hiddens: ['createdataset',  'logout']
+        });
+
+        this.authManager = new AuthManager({
+            onLogin: function () {
+                self.topMenu.refresh(menuConfAuth);
+            },
+            onLogout: function () {
+                self.topMenu.refresh(menuConfPub);
+            },
+            modal : {
+                keyboard: true,
+                backdrop: false
+            }
+        });
+
+        this.topMenu = new TopMenu(this.authManager.isLogged() ? menuConfAuth : menuConfPub);
 
         this.analysis = new Analysis({
             container: document.querySelector(s.ANALYSIS_CONTAINER),

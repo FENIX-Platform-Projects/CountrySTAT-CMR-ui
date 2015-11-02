@@ -81,6 +81,22 @@
         "EN": "Links",
         "FR": "PI"
       }
+    },
+    {
+      "attrs": {
+        "id": "login"
+      },
+      "label": {
+        "EN": "LOGIN"
+      }
+    },
+    {
+      "attrs": {
+        "id": "logout"
+      },
+      "label": {
+        "EN": "LOGOUT"
+      }
     }
   ],
   "type": "sidemenu",

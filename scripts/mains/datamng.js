@@ -96,8 +96,10 @@ require([
     require([
         'fx-d-m/start',
         'fx-d-m/routes',
-        'domReady!'
-    ], function (Application, routes) {
+        'fx-common/AuthManager',
+    ], function (Application, routes, AuthManager) {
+
+        
 
         var app = new Application({
             routes: routes,

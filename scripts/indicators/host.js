@@ -22,7 +22,7 @@ define([
 
         this.topMenu = new TopMenu({
             url: C.TOP_MENU,
-            active: 'home',
+            active: 'indicators',
             container: '#sidebar-wrapper',
             template: 'fx-menu/templates/side.html'
         });
