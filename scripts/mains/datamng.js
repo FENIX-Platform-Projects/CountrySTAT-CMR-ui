@@ -96,17 +96,23 @@ require([
     require([
         'fx-d-m/start',
         'fx-d-m/routes',
-        'fx-common/AuthManager',
+        'fx-common/AuthManager'
     ], function (Application, routes, AuthManager) {
 
-        
 
-        var app = new Application({
-            routes: routes,
-            controllerSuffix: '-controller',
-            controllerPath: '../../submodules/fenix-ui-data-management/src/js/controllers/',
-            root: '/fenix/',
-            pushState: false
-        });
+        var authMAnager = new AuthManager();
+        if(authMAnager.isLogged()) {
+
+
+            var app = new Application({
+                routes: routes,
+                controllerSuffix: '-controller',
+                controllerPath: '../../submodules/fenix-ui-data-management/src/js/controllers/',
+                root: '/fenix/',
+                pushState: false
+            });
+        }else{
+            window.location.replace("./index.html");
+        }
     });
 });

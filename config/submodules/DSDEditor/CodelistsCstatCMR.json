@@ -1,15 +1,15 @@
 [
   {
-    "value": "GAUL0|2014",
+    "value": "GAUL|2014",
     "text": {
-      "EN": "GAUL 0"
+      "EN": "GAUL"
     },
     "subject": "geo"
   },
   {
     "value": "CPC|2.1",
     "text": {
-      "EN": "CPC 2.1Test"
+      "EN": "CPC 2.1"
     },
     "subject": "item"
   },
