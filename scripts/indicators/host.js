@@ -41,7 +41,6 @@ define([
             hiddens: ['createdataset',  'logout']
         });
 
-        debugger;
         $(s.TABLE_CONTAINER).append(TableTemplate);
 
         $(s.LEGEND_CONTAINER).append(LegendTemplate);
