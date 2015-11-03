@@ -34,6 +34,7 @@ require([
                     progressbar : '{FENIX_CDN}/js/progressbar/0.8.1/progressbar.min',
 
                     'host/config' : '../../config/config',
+                    'fx-menu/templates': '../../scripts/templates',
 
                     'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
                 },
