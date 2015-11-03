@@ -23,7 +23,8 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
             url: './config/submodules/fx-menu/topmenu_config.json',
             container: '#sidebar-wrapper',
             template: 'fx-menu/templates/side.html',
-            active: "createdataset"
+            active: "createdataset",
+            lang: "FR"
         };
 
         cfg.SITE_TEMPLATE = 'topmenu';
