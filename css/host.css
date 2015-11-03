@@ -7423,9 +7423,12 @@ input[type="checkbox"]:checked + label {
     padding: 0;
     width: 100%; }
 
+.datamng-container {
+  padding: 0; }
+
 /* Afghanistan Home */
 .country-welcome {
-  background-color: #f07f52; }
+  background-color: #f09752; }
 
 .country-details {
   background-image: url(img/cmr-home-bg.jpg);
@@ -7462,7 +7465,7 @@ input[type="checkbox"]:checked + label {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #f8bfa9; }
+    background-color: #f8cba9; }
     .home-content .home-detail-pointer:before {
       content: '';
       position: absolute;
@@ -7473,7 +7476,7 @@ input[type="checkbox"]:checked + label {
       height: 0;
       border-style: solid;
       border-width: 13.5px 0 13.5px 17px;
-      border-color: transparent transparent transparent #f8bfa9; }
+      border-color: transparent transparent transparent #f8cba9; }
     .home-content .home-detail-pointer .afg-title {
       position: absolute;
       top: 50%;
@@ -7572,7 +7575,7 @@ ol li:before {
   height: 20px; }
 
 .home-tile.gray {
-  background-color: #93aba7;
+  background-color: #93abab;
   position: relative; }
   .home-tile.gray .news-content {
     position: absolute;
@@ -7614,7 +7617,7 @@ ol li:before {
     left: 0; }
 
 .home-tile.map {
-  background-color: #a5d0c9;
+  background-color: #a5d0cf;
   position: relative;
   background-image: url("img/home-map-cameroon.svg");
   background-size: 570px 371px;
@@ -7633,7 +7636,7 @@ ol li:before {
     transition: all 1s ease 0.2s; }
   .home-tile.map .afg-title {
     position: absolute;
-    background-color: #a5d0c9;
+    background-color: #a5d0cf;
     top: 16px; }
   .home-tile.map h3 {
     color: #333333;
@@ -7704,18 +7707,18 @@ ol li:before {
 /* Afg - Side Menu */
 #sidebar-wrapper {
   padding-top: 50px;
-  background-color: #2d4246; }
+  background-color: #2d3e46; }
   #sidebar-wrapper .sidebar-nav {
     top: 50px; }
     #sidebar-wrapper .sidebar-nav li {
       line-height: 50px;
-      background-color: #346062;
+      background-color: #345962;
       margin-bottom: 1px;
       font-family: 'Roboto';
       font-size: 14px; }
       #sidebar-wrapper .sidebar-nav li.active a {
         color: #e0e9f0;
-        background-color: #3f898b;
+        background-color: #3f7d8b;
         position: relative; }
         #sidebar-wrapper .sidebar-nav li.active a:before {
           content: '';
@@ -7726,11 +7729,11 @@ ol li:before {
           left: 0;
           top: 0; }
         #sidebar-wrapper .sidebar-nav li.active a:hover, #sidebar-wrapper .sidebar-nav li.active a:active, #sidebar-wrapper .sidebar-nav li.active a:focus, #sidebar-wrapper .sidebar-nav li.active a:visited {
-          background-color: #3f898b; }
+          background-color: #3f7d8b; }
       #sidebar-wrapper .sidebar-nav li a {
         color: #e0e9f0; }
         #sidebar-wrapper .sidebar-nav li a:hover, #sidebar-wrapper .sidebar-nav li a:active, #sidebar-wrapper .sidebar-nav li a:focus, #sidebar-wrapper .sidebar-nav li a:visited {
-          background-color: #3f898b; }
+          background-color: #3f7d8b; }
   #sidebar-wrapper .sidebar-nav.fx-ul-right {
     top: 350px; }
 
