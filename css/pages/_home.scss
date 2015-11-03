@@ -284,12 +284,13 @@ ol li:before {
     left: 0;
   }
 
+
 }
 
 .home-tile.map{
   background-color: $afg-map-tile;
   position: relative;
-  background-image: url("img/home-map.svg");
+  background-image: url("img/home-map-cameroon.svg");
   background-size: 570px 371px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -298,9 +299,11 @@ ol li:before {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 
+
+
   &:hover{
     background-size: 1600px 1035px;
-    background-position: 69% 58%;
+    background-position: 50% 76%;
     -webkit-transition: all 1s ease 0.2s;
     -moz-transition: all 1s ease 0.2s;
     -o-transition: all 1s ease 0.2s;
