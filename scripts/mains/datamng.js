@@ -56,6 +56,7 @@ require([
                     'bootstrap-datetimepicker': "{FENIX_CDN}/js/bootstrap-datetimepicker/3.1.3/bootstrap-datetimepicker",
 
                     'fx-menu/templates': '../../scripts/templates',
+                    'fx-d-m/templates/site' : '../../scripts/templates/site-sidemenu.hbs',
 
                     pnotify: '{FENIX_CDN}/js/pnotify/2.0.1/pnotify.custom.min',
 
@@ -63,7 +64,9 @@ require([
 
                     'fx-cat-br/config/config': '../../config/submodules/catalog/config',
 
+/*
                     'fx-d-m/templates/site' : '../../submodules/fenix-ui-data-management/src/js/templates/site-sidemenu.hbs',
+*/
 
                     'fx-submodules/config/baseConfig': '../../config/submodules/config_base'
 
