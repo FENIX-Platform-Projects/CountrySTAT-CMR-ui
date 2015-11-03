@@ -28,6 +28,7 @@ require([
                     handlebars: "{FENIX_CDN}/js/handlebars/2.0.0/handlebars",
                     amplify: '{FENIX_CDN}/js/amplify/1.1.2/amplify.min',
                     rsvp: '{FENIX_CDN}/js/rsvp/3.0.17/rsvp',
+                    'fx-menu/templates': '../../scripts/templates',
 
                     'host/config' : '../../config/config',
 

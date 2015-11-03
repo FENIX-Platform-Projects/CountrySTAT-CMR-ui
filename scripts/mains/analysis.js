@@ -66,6 +66,8 @@ require([
                 //'packery': '../lib/packery.1.4.1.min',
 
                 'host/config' : '../../config/config',
+                'fx-menu/templates': '../../scripts/templates',
+
 
                 //Components configuration
                 "fx-cat-br/config/fx-catalog-blank-filter": '../../config/submodules/catalog/blankFilter',
