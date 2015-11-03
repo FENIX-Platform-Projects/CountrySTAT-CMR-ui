@@ -32,7 +32,9 @@ define([
             url: C.TOP_MENU,
             active: 'indicators',
             container: '#sidebar-wrapper',
-            template: 'fx-menu/templates/side.html'
+            template: 'fx-menu/templates/side.html',
+            lang: "FR"
+
         };
 
         var menuConfAuth = _.extend({}, menuConf, {

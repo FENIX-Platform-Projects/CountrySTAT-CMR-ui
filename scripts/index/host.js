@@ -29,7 +29,8 @@ define([
             url: C.TOP_MENU,
             active: 'home',
             container: '#sidebar-wrapper',
-            template: 'fx-menu/templates/side.html'
+            template: 'fx-menu/templates/side.html',
+            lang: "FR"
         };
 
         var menuConfAuth = _.extend({}, menuConf, {
@@ -85,11 +86,11 @@ define([
 
         var circle = new ProgressBar.Circle(s.PERCENTAGE_ONE, c);
 
-        circle.animate(0.58);
+        circle.animate(0.54);
 
         var circle_two = new ProgressBar.Circle(s.PERCENTAGE_TWO, c);
 
-        circle_two.animate(0.42);
+        circle_two.animate(0.46);
 
     };
 

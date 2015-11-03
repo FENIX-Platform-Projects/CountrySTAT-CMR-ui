@@ -58,7 +58,8 @@ define([
             url: C.TOP_MENU,
             active: "analysis",
             container: '#sidebar-wrapper',
-            template: 'fx-menu/templates/side.html'
+            template: 'fx-menu/templates/side.html',
+            lang: "FR"
         };
 
         var menuConfAuth = _.extend({}, menuConf, {
@@ -105,29 +106,29 @@ define([
                 BLANK_FILTER: C.CATALOG_BLANK_FILTER
             },
 
-           results: {
-               actions: {
-                   SELECT_RESOURCE: {
-                       event: 'select',
-                       labels: {
-                           EN: 'View'
-                       }
-                   },
-                   METADATA: {
-                       event: 'metadata',
-                       labels: {
-                           EN: 'Metadata'
-                       }
-                   },
-                   DOWNLOAD: {
-                       event: 'download',
-                       labels: {
-                           EN: 'Download'
-                       }
-                   }
+            results: {
+                actions: {
+                    SELECT_RESOURCE: {
+                        event: 'select',
+                        labels: {
+                            EN: 'View'
+                        }
+                    },
+                    METADATA: {
+                        event: 'metadata',
+                        labels: {
+                            EN: 'Metadata'
+                        }
+                    },
+                    DOWNLOAD: {
+                        event: 'download',
+                        labels: {
+                            EN: 'Download'
+                        }
+                    }
 
-               }
-           }
+                }
+            }
 
         }).init();
     };
