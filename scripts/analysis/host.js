@@ -5,7 +5,7 @@ define([
     'fx-menu/start',
     'fx-ana/start',
     'fx-cat-br/start',
-    'FENIX_UI_METADATA_VIEWER',
+    'fx-md-v/start',
     'fx-report',
     'host/config',
     'fx-common/AuthManager',
