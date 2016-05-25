@@ -8,13 +8,13 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
         //services.SERVICE_BASE_ADDRESS = "http://fenix.fao.org/d3s_dev2/msd";
 
         /*var services = {
-    
-            TOP_MENU: {
-                url: 'json/fenix-ui-topmenu_config.json',
-                active: "createdataset"
-            },
-            SERVICE_BASE_ADDRESS: "http://fenix.fao.org/d3s_dev/msd"
-        };*/
+
+         TOP_MENU: {
+         url: 'json/fenix-ui-topmenu_config.json',
+         active: "createdataset"
+         },
+         SERVICE_BASE_ADDRESS: "http://fenix.fao.org/d3s_dev/msd"
+         };*/
 
         var cfg = {};
         $.extend(cfg, config_base);
@@ -24,8 +24,13 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
             container: '#sidebar-wrapper',
             template: 'fx-menu/templates/side.html',
             active: "createdataset",
-            lang: "FR"
+            lang: "EN"
         };
+
+        cfg.SECONDARY_MENU = {
+            url: './submodules/fenix-ui-data-management/config/secondary_menu.json',
+            disable: ['delete', 'close', 'data', 'dsd']
+        }
 
         cfg.SITE_TEMPLATE = 'topmenu';
 
@@ -34,7 +39,7 @@ define(['jquery', 'fx-submodules/config/baseConfig'],
         cfg.DSD_EDITOR_DATASOURCES = ["D3S"];
 
         //cfg.METADATA_EDITOR_AJAX_EVENT_CALL = "config/submodules/metadataEditor/fx-editor-ajax-config_PROD.json";
-        cfg.METADATA_EDITOR_AJAX_EVENT_CALL = "config/submodules/metadataEditor/fx-editor-ajax-config_PROD.json";
+        //cfg.METADATA_EDITOR_AJAX_EVENT_CALL = "config/submodules/metadataEditor/fx-editor-ajax-config_PROD.json";
 
         return cfg;
     });
