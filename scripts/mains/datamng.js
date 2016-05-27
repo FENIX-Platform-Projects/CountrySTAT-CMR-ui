@@ -44,7 +44,7 @@ require([
             config: {
                 waitSeconds : 30,
 
-                locale: 'en',
+                locale: 'fr',
 
                 // Specify the paths of vendor libraries
                 paths: {

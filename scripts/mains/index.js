@@ -20,7 +20,7 @@ require([
             placeholders: { "FENIX_CDN": "//fenixrepo.fao.org/cdn" },
             config: {
 
-                locale: 'en',
+                locale: 'fr',
 
                 // Specify the paths of vendor libraries
                 paths: {
